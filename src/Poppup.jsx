@@ -25,9 +25,9 @@ const [ click , isclick] = useState(true);
 const handleSubmit = (e) => {
   e.preventDefault();
 
-  const serviceid = 'service_9wekw2x'
- const templatid =  'template_hqixrfg'
- const publickey =  '0Uq7ECDYbVwPeXVVS'
+  const serviceid = process.env.REACT_APP_Serviceid 
+ const templatid =  process.env.REACT_APP_Templatid
+ const publickey =  process.env.REACT_APP_Publickey
 
  const templateparam ={
   from_name: emaildata.Name,
